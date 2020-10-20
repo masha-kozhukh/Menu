@@ -1,0 +1,604 @@
+html{
+    box-sizing: border-box;
+}
+*, *::after,*::before{
+    box-sizing: inherit;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.body{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-smoothing:grayscale;
+    overflow-x: hidden;
+}
+
+a{
+    color:#fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+a:hover , a:focus, a:active{
+    opacity: 0.5;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.specialties{
+    background: url('../img/team-bg.jpg') no-repeat center;
+    -webkit-background-size: cover;
+     background-size: cover;
+     margin-top: 50px;
+}
+section{
+    height: auto;
+}
+/*header*/
+.header{
+    background: url('../img/header-bg.jpg')no-repeat center;
+    -webkit-background-size: cover;
+     background-size: cover;
+
+}
+.header__content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__list li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.header__footer{
+    padding-top: 150px;
+    display: flex;
+   
+
+}
+.header__item{
+    flex: 1 1 33.33%;
+}
+.header__schedule{
+    color:#fff;
+    /* transform: rotate(-90deg);
+    padding-top: 40px;
+    padding-right: -100px;
+    padding-top: 190px;   */
+
+    transform: rotate(0.5turn);
+    writing-mode: vertical-rl;
+   
+   
+}
+
+.main__text{
+    text-align: center;
+    color:#fff;
+
+}
+
+.header__title{
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 15px ;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header__title::after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width:70px;
+    background: #E8C300;
+    right: 45%;
+    bottom:0;
+    
+
+}
+
+
+.header__subtitle{
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 14px;
+}
+.header__links{
+   margin-top: 70px;
+   margin-bottom: 92px;
+   
+
+}
+ 
+.intro__link:hover,
+.intro__link:focus{
+    background: #E8C300;
+    border: transparent;
+    opacity: 1;
+}
+
+
+.intro__link{
+    margin-right: 20px;
+    padding:10px 20px;
+    border: 2px solid #fff;
+    display: inline-block;
+     width: 150px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+
+.link__bottom{
+    margin-bottom: 93px;
+}
+.link__bottom-style{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding:10px;
+    background: #fff;
+}
+
+
+.link__bottom-style i{
+    color: #333333;
+    font-size: 20px;
+
+}
+
+
+.social__media{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    
+}
+
+.social__media a{
+    margin-bottom: 30px;
+}
+
+.social__link{
+ border: 1px solid #fff;
+ border-radius: 100%;
+ padding:15px;
+}
+
+
+.social__link i{
+
+   font-size: 20px;
+}
+
+
+
+
+
+
+/* .nav__link{
+    position: relative;
+    padding-top: 5px;
+}
+.nav__link::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #E8C300;
+    bottom: 0%;
+     
+
+} */
+
+
+
+/*/header*/
+
+/* about */
+  .text__black{
+      color: black;
+  }
+/* /about */
+
+/* team */
+  .team{
+      background: url('../img/team-bg.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+  }  
+
+
+
+/* /team */
+
+.top__text{
+    padding: 50px 0px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 6px;
+
+}
+.content{
+    padding: 40px 0px ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.content__item{
+    flex: 1 1;
+}
+
+.content__pic{
+    transition: .2s;
+   
+}
+.content__img-left {
+    position: relative;
+
+    transition: .3s all;
+    
+}
+
+.content__img-right{
+ 
+    position: relative;
+    transition: .3s all;
+}
+
+.content__img-left::after{
+    display: block;
+    content: "";
+    position: absolute;
+    border: 20px solid #E8C300;
+    width: 250px;
+    height: 262px;
+    bottom: 20%;
+    left: -14%;
+    
+
+}
+.content__img-right::after{
+    display: block;
+    content: "";
+    position: absolute;
+    border: 20px solid #E8C300;
+    width: 250px;
+    height: 262px;
+    bottom: calc(50% - 105px);
+    left:50%;
+    
+
+}
+.content__img-left:hover::after{
+    opacity: .6;
+}
+
+.content__pic:hover , 
+.content__pic:focus{
+    opacity: .6;
+    box-shadow: 2px 2px 2px 4px rgba(88, 84, 84, 0.5);
+}
+
+.item__text{
+    margin-top: 67px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+}
+.item__title{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    position: relative;
+}
+
+.item__title::after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width:50px;
+    background: #E8C300;
+    right: 50%;
+    bottom:0;
+    
+
+}
+
+.item__subtitle{
+
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.item__subtitle-bolt{
+    font-weight: 600;
+}
+
+
+/* booking */
+
+.booking__form-item{
+    width: 277px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: rgba(229, 229, 229, 1);
+    padding:15px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s all;
+
+}
+
+.booking__form-item:hover,
+.booking__form-item:focus,
+.booking__form-buttom:hover,
+.booking__form-buttom:focus{
+    opacity: .6;
+  
+}
+.booking__form-buttom{
+   height: 60px;
+   width: 566px;
+   padding:15px 200px;
+   background: #E8C300;
+   color: #fff;
+   border-radius: 5px;
+   border: transparent;
+   outline: none;
+}
+
+/* /booking */
+
+
+
+/* menu */
+  
+.item__top-text{
+    margin-top: 100px;
+   
+    text-align: center;
+}
+
+
+.menu__subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    
+}
+
+.menu__list li{
+    color: #333333;
+    font-weight: 700;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    padding:0px 20px;
+}
+.menu__list li:last-child{
+    border-right-color: transparent;
+}
+
+.menu__price{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.price__item{
+    flex: 1 1 33.33%;
+    margin: 30px 0px;
+}
+.price__title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price__subtitle{
+    margin-top: 10px;
+    color: #333333;
+    text-align: center;
+}
+
+
+
+/* /menu */
+
+/*private__events*/
+
+
+.private__events{
+    background: url('../img/team-bg.jpg') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+.content__mg-text{
+    position: absolute;
+    background-color: #0000;
+    color:#fff;
+    transform: rotate(-90deg);
+     bottom: -45%;
+    left: 45%;
+    
+    height: 60px;
+    font-size: 24px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.contact-photo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.figcaption{
+    font-size: 24px;
+    text-indent: 20px;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+/*slaider*/
+
+.slaider{
+    display: flex;
+  
+    
+    min-width: 100%;
+}
+.slaider__item{
+   
+}
+
+/* /slaider */
+
+/* contact */
+.contacts{
+    margin-bottom: 100px;
+}
+.contact__input{
+    width:424px;
+    height: 60px;
+    padding:10px;
+    margin-top: 50px;
+    margin-right: 10px;
+    
+}
+.contact__input:last-child{
+    margin-right: 0px;
+}
+.contact__textarea{
+    width: 100%;
+    height: 120px;
+    margin: 10px 0px;
+    padding:10px;
+}
+.contact__textarea,
+.contact__input{
+    border-radius: 5px;
+    border: transparent;
+    background: rgba(229, 229, 229, 1);
+    color:rgba(51, 51, 51, 0.5);
+
+    transition: .3s all;
+}
+
+.contact__textarea,
+.contact__input{
+    opacity: .6;
+}
+input::placeholder,
+textarea::placeholder{
+    color:rgba(51, 51, 51, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 19px;
+
+}
+
+.contact__link{
+    color: gray;
+    font-size: 12px;
+
+}
+.contact__link i{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
+    color: #E8C300;
+    padding: 0px 10px ;
+    
+}
+.contact__buttom{
+    background: #E8C300;
+   color: #fff;
+   border-radius: 5px;
+   border: transparent;
+   outline: none; 
+   transition: .3s all;
+   width:50%;
+   min-height: 60px;
+}
+.contact__buttom:hover{
+    opacity: .6;
+}
+
+.contact__form-item{
+    display: flex;
+
+}
+.contact__links{
+    width: 50%;
+}
+
+/* /contact */
+/* location */
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
+
+/* /location */
+ 
+/* footer */
+
+.footer{
+    flex-shrink: 0;
+}
+
+.footer-text{
+    min-height: 100px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer */
+
+
+
+
+
+
+
